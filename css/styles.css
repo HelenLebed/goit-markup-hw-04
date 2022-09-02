@@ -103,9 +103,9 @@ address {
     margin-right: 10px;
 }
 
-.order {
-    background: var(--order-background-color);
-}
+/* .order { */
+
+/* } */
 .order-text {
     font-weight: 900;
     font-size: 44px;
@@ -337,6 +337,7 @@ address {
     border-bottom: 1px solid #ececec;
 }
 .order-wrap {
+    background: var(--order-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
@@ -344,7 +345,10 @@ address {
             rgba(47, 48, 58, 0.4)
         ),
         url("../images/background-image.jpg");
-    background-size: cover;
+
+    background-size: 1600px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .features-section {

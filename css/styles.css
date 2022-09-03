@@ -65,6 +65,9 @@ address {
     clip-path: inset(50%);
     margin: -1px;
 }
+.menu-link.curent {
+    color: var(--main-logo-color);
+}
 .page-header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -293,6 +296,7 @@ address {
     letter-spacing: 0.06em;
     color: var(--primary-font-color);
 }
+
 .portfolio-example-list p {
     font-size: 16px;
     line-height: 1.9;
@@ -346,11 +350,10 @@ address {
         ),
         url("../images/background-image.jpg");
 
-    background-size: 1600px, cover;
+    background-size: 1600px 600px;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .features-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -456,10 +459,13 @@ address {
     padding-bottom: 94px;
 }
 .portfolio-example-item {
-    width: calc((100% - 2 * 1170) / 3);
+    width: calc((100% - 2 * 30px) / 3);
 }
-.portfolio-example-item:hover,
-.portfolio-example-item:focus {
+.portfolio-example-link {
+    display: block;
+}
+.portfolio-example-link:hover,
+.portfolio-example-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -473,12 +479,12 @@ address {
 
 .bottom-wrap {
     display: flex;
+    align-items: baseline;
 }
 .footer-join {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
-    padding: 12px 0;
 }
 .footer-social-list {
     display: flex;
